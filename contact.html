@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kontakt – Lenny Drescher Social Media Management</title>
+  <meta name="description" content="Kontakt aufnehmen – Lenny Drescher Social Media Management." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- ================= HEADER / NAV ================= -->
+  <header>
+    <div class="container nav">
+      <a class="logo" href="index.html">
+        <div class="logo-title">Lenny Drescher</div>
+        <div class="logo-subtitle">Social Media Management</div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Menü öffnen / schließen">
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="index.html">Start</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <button class="nav-cta" onclick="location.href='portfolio.html'">
+          Portfolio ansehen
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= MAIN ================= -->
+  <main>
+
+    <!-- ================= INTRO ================= -->
+    <section class="container">
+      <div class="section-header">
+        <div class="kicker">Kontakt</div>
+        <h1 class="h-title">Projekt anfragen</h1>
+        <p class="p-sub">
+          Schreib mir kurz, worum es geht.  
+          Ich melde mich zeitnah bei dir zurück.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT FORM ================= -->
+    <section class="container">
+      <div class="glass form-card">
+
+        <form id="contactForm">
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Dein Name"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">E-Mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="deinname@mail.de"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="topic">Thema (optional)</label>
+            <input
+              type="text"
+              id="topic"
+              name="topic"
+              placeholder="z. B. Social Media, Video, Website"
+            />
+          </div>
+
+          <div>
+            <label for="message">Nachricht</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Kurz: Was brauchst du? Ziel des Projekts?"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn primary">
+            Anfrage senden
+          </button>
+
+          <p class="p-sub" style="margin-top: .4rem; font-size: .85rem;">
+            Beim Absenden öffnet sich dein E-Mail-Programm.
+            Die Nachricht wird erst gesendet, wenn du sie dort bestätigst.
+          </p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <div class="footer-inner">
+      <div>© <span id="year"></span> Lenny Drescher</div>
+      <div class="footer-links">
+        <a href="index.html">Start</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Kontakt</a>
+        <a href="impressum.html">Impressum</a>
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
